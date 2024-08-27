@@ -1,0 +1,428 @@
+/* login page css ================================= */
+.loginmaster {
+  background: linear-gradient(90deg, #5170ff, #ff66c4);
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginmain {
+  /* border: 1px solid gray; */
+  background-color: white;
+  color: black;
+}
+.loginmain h3 {
+  /* padding: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .loginrow { */
+/* padding: 30px; */
+/* min-width: 500px; */
+/* } */
+.exclamation {
+  font-size: 50px;
+}
+.loginform {
+  max-width: 500px;
+}
+
+.username {
+  height: 90px;
+  /* min-width: 290px; */
+}
+/* .loginbtn.btn.btn-primary {
+  width: 100%;
+  background-color: #6cc51d;
+  border: none;
+}
+.loginbtn.btn.btn-primary:hover {
+  background-color: #5aa418;
+  border-color: #549916;
+} */
+.loginform .form-label {
+  font-weight: bolder;
+}
+
+.loginform2 {
+  color: black;
+  /* background-color: lightgray; */
+}
+
+/* ================== panel css ========================= */
+/* ============== Dashboard CSS==================== */
+.dashboard {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  /* min-height: 692px; */
+  width: 80px;
+  background-color: rgb(189, 50, 40);
+  transition: all 0.2s ease-in-out;
+  z-index: 99;
+  border-radius: 10px;
+}
+
+.dashboard.closed {
+  width: 75px;
+}
+
+.dashboard.open {
+  width: 300px;
+}
+
+/* .dashboard.closed .logo2 {
+    left: -300px;
+    transition: 0.5s ease-in-out;
+  } */
+.dashboard.closed .title {
+  display: none;
+  transition: 0.2s ease-in-out;
+}
+
+.dashtoggle.toggle-button {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.dashtoggle.toggle-button:hover {
+  transition: 0.2s ease-in-out;
+  padding: 6px 10px;
+  color: rgb(100, 0, 0);
+  /* background-color: white; */
+}
+.dashtoggle.toggle-button:hover.dashboard.open {
+  background-color: none;
+}
+#bars:before,
+#times:before {
+  color: rgb(255, 255, 255);
+}
+
+#bars:before:hover {
+  /* padding: 10px; */
+  color: rgb(255, 255, 255);
+}
+
+.dashboard .navigation {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
+.nav.flex-column {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav.flex-column .nav-item {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.nav.flex-column .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  left: 5px;
+}
+.nav.flex-column .nav-item .nav-link.active {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+.nav.flex-column .nav-item .nav-link:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+.icon {
+  margin-right: 10px;
+  width: 30px;
+  margin-left: 12px;
+}
+a.logout.nav-link.active {
+  background-color: white !important;
+  color: #000 !important;
+}
+a.logout.nav-link.active:hover {
+  background-color: #5a39c6 !important;
+  color: white !important;
+}
+.title {
+  flex: 1;
+  white-space: nowrap;
+}
+/* ================================================ */
+/* ============ panel header css ================== */
+.main {
+  position: absolute;
+  /* background-color: rgba(211, 211, 211, 0.377); */
+  /* background-color: rgba(202, 211, 241, 0.377); */
+  background-color: #f5f9f1;
+  transition: 0.2s ease-in-out;
+  /* text-align: center; */
+  min-height: 100vh;
+}
+.topbar {
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+  top: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.692);
+  padding: 20px;
+  z-index: 99;
+  /* box-shadow: 10px 10px 10px 0px rgb(107, 107, 107); */
+}
+.topbar h1 {
+  font-size: 40px;
+}
+/* ================ panel bottom ======================= */
+.bottom {
+  padding: 10px 0;
+  width: calc(100% - 140px);
+  margin-left: auto;
+  margin-right: auto;
+  /* position: sticky; */
+  bottom: 0;
+  height: 40px;
+  /* box-shadow: -10px -10px 10px 0px lightgray; */
+  /* background-color: white; */
+}
+
+.bottombar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottombar {
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+}
+.intoggle-powered {
+  color: #6cc51d;
+}
+.intoggle-powered:hover {
+  color: rgb(189, 50, 40);
+}
+
+/* right pane ================ */
+.table-responsive {
+  padding: 0px;
+  background-color: white;
+  border-radius: 5px;
+}
+.panelbtns {
+  background-color: #6cc51d;
+  color: white;
+}
+.panelbtns:hover {
+  background-color: #5aa418;
+  border-color: #549916;
+  color: white;
+}
+/* ==========middle container  ======================== */
+.middle {
+  min-height: calc(100vh - 158px);
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* .table-responsive {
+  height: 400px;
+  overflow-y: auto;
+} */
+
+/* admin nav css ========================== */
+.adminNav {
+  background-color: rgb(126, 0, 0);
+  border-radius: none;
+  padding: 0px 10px;
+}
+.adminNav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.adminNav a:hover {
+  color: black;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+/* navtabs css */
+.adminNav .nav-link.active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.tab-pane {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tab-pane.show {
+  opacity: 1;
+}
+
+.user-h1 {
+  color: #01a6a0;
+  font-size: xx-large;
+  line-height: normal;
+}
+
+.queryitem {
+  border: 1px solid black;
+  padding: 10px;
+}
+.queryitem h3 {
+  text-transform: capitalize;
+}
+.queryitem {
+  cursor: pointer;
+}
+
+/* choose file button blogs  */
+.filebtn {
+  /* background-color: rgba(211, 211, 211, 0.514); */
+  width: 100%;
+  outline: none;
+}
+.filebtn::-webkit-file-upload-button {
+  color: white;
+  background-color: rgb(189, 50, 40);
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 3px solid rgb(189, 50, 40);
+}
+.filebtn::-webkit-file-upload-button:hover {
+  background-color: rgb(113, 11, 4);
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(113, 11, 4);
+}
+/* ==================== */
+
+/* selected image preview */
+.previewimage {
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.cardimg {
+  max-width: 100%;
+  max-height: 45px;
+  object-fit: contain;
+}
+
+/* products table */
+td {
+  vertical-align: middle;
+}
+.profile-orders td{
+  vertical-align: top;
+}
+
+.profilepic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.profilepic img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+.profilepic2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  overflow: hidden;
+}
+.profilepic2 img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .topbar h1 {
+    font-size: 30px;
+  }
+}
+
+/* categories page */
+.categories-container .btn {
+  padding: 5px 10px;
+}
+.categories-container button i:hover {
+  color: white;
+}
+.addcategory-btn {
+  color: white;
+}
+/* productlist page */
+.productlist table button,
+.productlist table a {
+  color: white;
+}
+/* offers page */
+.addcoupon-form button,
+.addcoupon-form a {
+  color: white;
+}
+/* adminpage */
+.profile-container {
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.profile-container.show {
+  max-height: 1000px;
+  overflow: hidden;
+  border: 2px solid black;
+  transition: max-height 0.3s ease-in-out;
+}
+.adminpage-head {
+  z-index: 999;
+  background-color: white;
+}
+.createform img {
+  max-height: 200px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.dashboard-page i {
+  font-size: 60px;
+}

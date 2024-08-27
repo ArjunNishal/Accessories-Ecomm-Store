@@ -1,0 +1,14 @@
+{
+    product1: example,
+    options : {
+        0 : example,
+        1 : example
+    }
+},
+{
+    product2: example,
+    options : {
+        0 : example,
+        1 : example
+    }
+}
